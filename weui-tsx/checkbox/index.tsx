@@ -49,6 +49,7 @@ const WeCheckbox: React.FC<ICheckbox> = ({
 	label = "label",
 	extClass = "",
 	bindchange = (e) => {},
+	children,
 }) => (
   <Checkbox 
 		multi={multi}
@@ -57,6 +58,9 @@ const WeCheckbox: React.FC<ICheckbox> = ({
 		label={label}
 		extClass={extClass}
 		bindchange={bindchange}
-/>
+
+  >
+    {children}
+  </Checkbox>
 )
 export default WeCheckbox

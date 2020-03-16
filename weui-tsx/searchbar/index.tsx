@@ -63,6 +63,7 @@ const WeSearchbar: React.FC<ISearchbar> = ({
 	bindblur = (e) => {},
 	bindinput = (e) => {},
 	bindselectresult = (e) => {},
+	children,
 }) => (
   <Searchbar 
 		extClass={extClass}
@@ -78,6 +79,9 @@ const WeSearchbar: React.FC<ISearchbar> = ({
 		bindblur={bindblur}
 		bindinput={bindinput}
 		bindselectresult={bindselectresult}
-/>
+
+  >
+    {children}
+  </Searchbar>
 )
 export default WeSearchbar

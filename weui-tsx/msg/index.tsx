@@ -49,6 +49,7 @@ const WeMsg: React.FC<IMsg> = ({
 	desc = "",
 	extClass = "",
 	size = 64,
+	children,
 }) => (
   <Msg 
 		title={title}
@@ -57,6 +58,9 @@ const WeMsg: React.FC<IMsg> = ({
 		desc={desc}
 		extClass={extClass}
 		size={size}
-/>
+
+  >
+    {children}
+  </Msg>
 )
 export default WeMsg

@@ -43,11 +43,15 @@ const WeCells: React.FC<ICells> = ({
 	title = "",
 	extClass = "",
 	footer = "",
+	children,
 }) => (
   <Cells 
 		title={title}
 		extClass={extClass}
 		footer={footer}
-/>
+
+  >
+    {children}
+  </Cells>
 )
 export default WeCells

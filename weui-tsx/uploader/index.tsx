@@ -69,6 +69,7 @@ const WeUploader: React.FC<IUploader> = ({
 	bindsuccess = (e) => {},
 	bindcancel = (e) => {},
 	binddelete = (e) => {},
+	children,
 }) => (
   <Uploader 
 		title={title}
@@ -87,6 +88,9 @@ const WeUploader: React.FC<IUploader> = ({
 		bindsuccess={bindsuccess}
 		bindcancel={bindcancel}
 		binddelete={binddelete}
-/>
+
+  >
+    {children}
+  </Uploader>
 )
 export default WeUploader

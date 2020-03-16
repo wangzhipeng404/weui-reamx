@@ -57,6 +57,7 @@ const WeNavigationBar: React.FC<INavigationBar> = ({
 	show = true,
 	delta = 1,
 	bindback = (e) => {},
+	children,
 }) => (
   <NavigationBar 
 		extClass={extClass}
@@ -69,6 +70,9 @@ const WeNavigationBar: React.FC<INavigationBar> = ({
 		show={show}
 		delta={delta}
 		bindback={bindback}
-/>
+
+  >
+    {children}
+  </NavigationBar>
 )
 export default WeNavigationBar

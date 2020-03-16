@@ -45,12 +45,16 @@ const WeCheckboxGroup: React.FC<ICheckboxGroup> = ({
 	extClass = "",
 	prop = "",
 	bindchange = (e) => {},
+	children,
 }) => (
   <CheckboxGroup 
 		multi={multi}
 		extClass={extClass}
 		prop={prop}
 		bindchange={bindchange}
-/>
+
+  >
+    {children}
+  </CheckboxGroup>
 )
 export default WeCheckboxGroup

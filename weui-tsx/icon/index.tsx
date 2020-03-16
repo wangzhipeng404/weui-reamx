@@ -47,6 +47,7 @@ const WeIcon: React.FC<IIcon> = ({
 	icon = "",
 	size = 20,
 	color = "#000000",
+	children,
 }) => (
   <Icon 
 		extClass={extClass}
@@ -54,6 +55,9 @@ const WeIcon: React.FC<IIcon> = ({
 		icon={icon}
 		size={size}
 		color={color}
-/>
+
+  >
+    {children}
+  </Icon>
 )
 export default WeIcon

@@ -49,6 +49,7 @@ const WeLoading: React.FC<ILoading> = ({
 	duration = 350,
 	type = "dot-gray",
 	tips = "加载中",
+	children,
 }) => (
   <Loading 
 		extClass={extClass}
@@ -57,6 +58,9 @@ const WeLoading: React.FC<ILoading> = ({
 		duration={duration}
 		type={type}
 		tips={tips}
-/>
+
+  >
+    {children}
+  </Loading>
 )
 export default WeLoading

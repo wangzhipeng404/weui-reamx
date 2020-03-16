@@ -59,6 +59,7 @@ const WeActionsheet: React.FC<IActionsheet> = ({
 	actions = [],
 	bindactiontap = (e) => {},
 	bindclose = (e) => {},
+	children,
 }) => (
   <Actionsheet 
 		title={title}
@@ -72,6 +73,9 @@ const WeActionsheet: React.FC<IActionsheet> = ({
 		actions={actions}
 		bindactiontap={bindactiontap}
 		bindclose={bindclose}
-/>
+
+  >
+    {children}
+  </Actionsheet>
 )
 export default WeActionsheet

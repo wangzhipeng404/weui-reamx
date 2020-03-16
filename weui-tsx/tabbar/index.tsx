@@ -45,12 +45,16 @@ const WeTabbar: React.FC<ITabbar> = ({
 	list = [],
 	current = 0,
 	bindchange = (e) => {},
+	children,
 }) => (
   <Tabbar 
 		extClass={extClass}
 		list={list}
 		current={current}
 		bindchange={bindchange}
-/>
+
+  >
+    {children}
+  </Tabbar>
 )
 export default WeTabbar

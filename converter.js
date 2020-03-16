@@ -142,7 +142,7 @@ function getBlockString (name, properties, evt) {
   })
   return {
     interface: `export interface I${name} {\n${typeArr.join('')}}`,
-    defaultValue: `{\n${defaultValueArr.join('')}}`,
+    defaultValue: `{\n${defaultValueArr.join('')}\tchildren,\n}`,
     attr: `${attrArr.join('')}`,
   }
 }
@@ -190,7 +190,10 @@ ${relateData.interface}
 
 const We${name}: React.FC<I${name}> = (${relateData.defaultValue}) => (
   <${name} 
-${relateData.attr}/>
+${relateData.attr}
+  >
+    {children}
+  </${name}>
 )
 export default We${name}
 `

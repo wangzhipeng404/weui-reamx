@@ -55,6 +55,7 @@ const WeGallery: React.FC<IGallery> = ({
 	bindchange = (e) => {},
 	binddelete = (e) => {},
 	bindhide = (e) => {},
+	children,
 }) => (
   <Gallery 
 		imgUrls={imgUrls}
@@ -66,6 +67,9 @@ const WeGallery: React.FC<IGallery> = ({
 		bindchange={bindchange}
 		binddelete={binddelete}
 		bindhide={bindhide}
-/>
+
+  >
+    {children}
+  </Gallery>
 )
 export default WeGallery

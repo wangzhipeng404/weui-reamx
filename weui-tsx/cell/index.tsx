@@ -75,6 +75,7 @@ const WeCell: React.FC<ICell> = ({
 	hasBody = true,
 	bindnavigatesuccess = (e) => {},
 	bindnavigateerror = (e) => {},
+	children,
 }) => (
   <Cell 
 		hover={hover}
@@ -96,6 +97,9 @@ const WeCell: React.FC<ICell> = ({
 		hasBody={hasBody}
 		bindnavigatesuccess={bindnavigatesuccess}
 		bindnavigateerror={bindnavigateerror}
-/>
+
+  >
+    {children}
+  </Cell>
 )
 export default WeCell

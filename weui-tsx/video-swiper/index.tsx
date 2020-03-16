@@ -63,6 +63,7 @@ const WeVideoSwiper: React.FC<IVideoSwiper> = ({
 	bindwait = (e) => {},
 	bindprogress = (e) => {},
 	bindloadedmetadata = (e) => {},
+	children,
 }) => (
   <VideoSwiper 
 		duration={duration}
@@ -78,6 +79,9 @@ const WeVideoSwiper: React.FC<IVideoSwiper> = ({
 		bindwait={bindwait}
 		bindprogress={bindprogress}
 		bindloadedmetadata={bindloadedmetadata}
-/>
+
+  >
+    {children}
+  </VideoSwiper>
 )
 export default WeVideoSwiper

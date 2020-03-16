@@ -61,6 +61,7 @@ const WeHalfScreenDialog: React.FC<IHalfScreenDialog> = ({
 	buttons = [],
 	bindclose = (e) => {},
 	bindbuttontap = (e) => {},
+	children,
 }) => (
   <HalfScreenDialog 
 		closabled={closabled}
@@ -75,6 +76,9 @@ const WeHalfScreenDialog: React.FC<IHalfScreenDialog> = ({
 		buttons={buttons}
 		bindclose={bindclose}
 		bindbuttontap={bindbuttontap}
-/>
+
+  >
+    {children}
+  </HalfScreenDialog>
 )
 export default WeHalfScreenDialog

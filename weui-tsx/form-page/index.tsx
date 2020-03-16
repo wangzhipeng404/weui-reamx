@@ -41,10 +41,14 @@ export interface IFormPage {
 const WeFormPage: React.FC<IFormPage> = ({
 	title = "",
 	subtitle = "",
+	children,
 }) => (
   <FormPage 
 		title={title}
 		subtitle={subtitle}
-/>
+
+  >
+    {children}
+  </FormPage>
 )
 export default WeFormPage

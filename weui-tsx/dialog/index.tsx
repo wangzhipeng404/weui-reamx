@@ -53,6 +53,7 @@ const WeDialog: React.FC<IDialog> = ({
 	buttons = [],
 	bindbuttontap = (e) => {},
 	bindclose = (e) => {},
+	children,
 }) => (
   <Dialog 
 		title={title}
@@ -63,6 +64,9 @@ const WeDialog: React.FC<IDialog> = ({
 		buttons={buttons}
 		bindbuttontap={bindbuttontap}
 		bindclose={bindclose}
-/>
+
+  >
+    {children}
+  </Dialog>
 )
 export default WeDialog

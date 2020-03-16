@@ -43,11 +43,15 @@ const WeForm: React.FC<IForm> = ({
 	models = {},
 	rules = [],
 	extClass = "",
+	children,
 }) => (
   <Form 
 		models={models}
 		rules={rules}
 		extClass={extClass}
-/>
+
+  >
+    {children}
+  </Form>
 )
 export default WeForm

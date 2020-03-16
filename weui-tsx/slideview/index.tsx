@@ -59,6 +59,7 @@ const WeSlideview: React.FC<ISlideview> = ({
 	bindbuttontap = (e) => {},
 	bindhide = (e) => {},
 	bindshow = (e) => {},
+	children,
 }) => (
   <Slideview 
 		extClass={extClass}
@@ -72,6 +73,9 @@ const WeSlideview: React.FC<ISlideview> = ({
 		bindbuttontap={bindbuttontap}
 		bindhide={bindhide}
 		bindshow={bindshow}
-/>
+
+  >
+    {children}
+  </Slideview>
 )
 export default WeSlideview

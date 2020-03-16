@@ -49,6 +49,7 @@ const WeToptips: React.FC<IToptips> = ({
 	delay = 2000,
 	extClass = "",
 	bindhide = (e) => {},
+	children,
 }) => (
   <Toptips 
 		type={type}
@@ -57,6 +58,9 @@ const WeToptips: React.FC<IToptips> = ({
 		delay={delay}
 		extClass={extClass}
 		bindhide={bindhide}
-/>
+
+  >
+    {children}
+  </Toptips>
 )
 export default WeToptips

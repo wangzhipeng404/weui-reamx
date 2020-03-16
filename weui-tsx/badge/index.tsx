@@ -41,10 +41,14 @@ export interface IBadge {
 const WeBadge: React.FC<IBadge> = ({
 	extClass = "",
 	content = "",
+	children,
 }) => (
   <Badge 
 		extClass={extClass}
 		content={content}
-/>
+
+  >
+    {children}
+  </Badge>
 )
 export default WeBadge
